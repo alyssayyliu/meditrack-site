@@ -1,20 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #08111f;
+  --background: #0f172a;
   --foreground: #eef4ff;
-  --muted: #97a8c0;
-  --line: rgba(180, 205, 255, 0.18);
+  --muted: #94a3b8;
+  --muted-strong: #64748b;
+  --line: rgba(148, 163, 184, 0.16);
   --accent: #3f7cff;
   --accent-strong: #2f63d1;
-  --surface: #0d1729;
+  --accent-warm: #f97316;
+  --surface: #1e293b;
+  --surface-elevated: #1e293b;
+  --surface-light: #334155;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-warm: var(--accent-warm);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-light: var(--surface-light);
+  --color-line: var(--line);
   --font-sans: var(--font-space-grotesk);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-geist);
 }
 
 * {
@@ -29,10 +40,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-space-grotesk), sans-serif;
-  background-image:
-    radial-gradient(circle at top left, rgba(63, 124, 255, 0.18), transparent 24%),
-    radial-gradient(circle at top right, rgba(53, 91, 176, 0.14), transparent 18%),
-    linear-gradient(180deg, #0a1322 0%, #08111f 40%, #07101d 100%);
 }
 
 ::selection {
@@ -55,10 +62,7 @@ button:hover {
   transform: translateY(-1px);
 }
 
-.display-font {
-  font-family: var(--font-fraunces), serif;
-}
-
-.section-rule {
-  border-top: 1px solid var(--line);
+a:active,
+button:active {
+  transform: translateY(0) scale(0.98);
 }

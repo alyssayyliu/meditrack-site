@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Geist } from "next/font/google";
 import "./globals.css";
 
 const bodyFont = Space_Grotesk({
@@ -7,8 +7,8 @@ const bodyFont = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const displayFont = Fraunces({
-  variable: "--font-fraunces",
+const displayFont = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
 });
 
